@@ -1,0 +1,16 @@
+# Python
+stats/venv/
+__pycache__/
+*.pyc
+
+# .NET
+backend/**/bin/
+backend/**/obj/
+
+# Environment
+.env
+appsettings.Development.json
+
+# OS
+.DS_Store
+Thumbs.db
