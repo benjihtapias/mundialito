@@ -1,0 +1,37 @@
+PlayerId,MundialitoId,TeamId,OppId,Game,WL,Pts,Goals,Assists,CleanSheet,GoalsConceded,GameId,GameIdStr,PlayerName,TeamName,TeamAbbr,OppName,OppAbbr,IsNewPlayer,IsNewTeam,IsMVP,IsGoldenBoot,IsPlaymaker
+32,0,10,11,1,W,3,0,0,1,0,10-11-1,STR-TBL-1,Ethan Diaz,Thunderbolts,TBL,Stormriders,STR,True,True,True,False,False
+32,0,10,11,2,W,3,2,0,1,0,10-11-2,STR-TBL-2,Ethan Diaz,Thunderbolts,TBL,Stormriders,STR,True,True,True,False,False
+32,0,10,12,1,L,0,1,0,0,5,10-12-1,RDG-TBL-1,Ethan Diaz,Thunderbolts,TBL,Red Dragons,RDG,True,True,True,False,False
+32,0,10,12,2,W,3,1,1,0,3,10-12-2,RDG-TBL-2,Ethan Diaz,Thunderbolts,TBL,Red Dragons,RDG,True,True,True,False,False
+30,0,10,11,1,W,3,3,3,1,0,10-11-1,STR-TBL-1,Liam Cruz,Thunderbolts,TBL,Stormriders,STR,True,True,False,True,True
+30,0,10,11,2,W,3,1,0,1,0,10-11-2,STR-TBL-2,Liam Cruz,Thunderbolts,TBL,Stormriders,STR,True,True,False,True,True
+30,0,10,12,1,L,0,0,0,0,5,10-12-1,RDG-TBL-1,Liam Cruz,Thunderbolts,TBL,Red Dragons,RDG,True,True,False,True,True
+30,0,10,12,2,W,3,1,0,0,3,10-12-2,RDG-TBL-2,Liam Cruz,Thunderbolts,TBL,Red Dragons,RDG,True,True,False,True,True
+31,0,10,11,1,W,3,1,1,1,0,10-11-1,STR-TBL-1,Noah Park,Thunderbolts,TBL,Stormriders,STR,True,True,False,False,False
+31,0,10,11,2,W,3,1,1,1,0,10-11-2,STR-TBL-2,Noah Park,Thunderbolts,TBL,Stormriders,STR,True,True,False,False,False
+31,0,10,12,1,L,0,2,1,0,5,10-12-1,RDG-TBL-1,Noah Park,Thunderbolts,TBL,Red Dragons,RDG,True,True,False,False,False
+31,0,10,12,2,W,3,1,0,0,3,10-12-2,RDG-TBL-2,Noah Park,Thunderbolts,TBL,Red Dragons,RDG,True,True,False,False,False
+34,0,11,10,1,L,0,0,0,0,4,10-11-1,STR-TBL-1,Lucas King,Stormriders,STR,Thunderbolts,TBL,True,True,False,False,False
+34,0,11,10,2,L,0,0,0,0,4,10-11-2,STR-TBL-2,Lucas King,Stormriders,STR,Thunderbolts,TBL,True,True,False,False,False
+34,0,11,12,1,L,0,0,0,0,4,11-12-1,RDG-STR-1,Lucas King,Stormriders,STR,Red Dragons,RDG,True,True,False,False,False
+34,0,11,12,2,W,3,0,0,0,1,11-12-2,RDG-STR-2,Lucas King,Stormriders,STR,Red Dragons,RDG,True,True,False,False,False
+33,0,11,10,1,L,0,0,0,0,4,10-11-1,STR-TBL-1,Mason Lee,Stormriders,STR,Thunderbolts,TBL,True,True,False,False,False
+33,0,11,10,2,L,0,0,0,0,4,10-11-2,STR-TBL-2,Mason Lee,Stormriders,STR,Thunderbolts,TBL,True,True,False,False,False
+33,0,11,12,1,L,0,0,0,0,4,11-12-1,RDG-STR-1,Mason Lee,Stormriders,STR,Red Dragons,RDG,True,True,False,False,False
+33,0,11,12,2,W,3,1,1,0,1,11-12-2,RDG-STR-2,Mason Lee,Stormriders,STR,Red Dragons,RDG,True,True,False,False,False
+35,0,11,10,1,L,0,0,0,0,4,10-11-1,STR-TBL-1,Owen Young,Stormriders,STR,Thunderbolts,TBL,True,True,False,False,False
+35,0,11,10,2,L,0,0,0,0,4,10-11-2,STR-TBL-2,Owen Young,Stormriders,STR,Thunderbolts,TBL,True,True,False,False,False
+35,0,11,12,1,L,0,0,0,0,4,11-12-1,RDG-STR-1,Owen Young,Stormriders,STR,Red Dragons,RDG,True,True,False,False,False
+35,0,11,12,2,W,3,0,0,0,1,11-12-2,RDG-STR-2,Owen Young,Stormriders,STR,Red Dragons,RDG,True,True,False,False,False
+36,0,12,10,1,W,3,3,1,0,3,10-12-1,RDG-TBL-1,Aiden Fox,Red Dragons,RDG,Thunderbolts,TBL,True,True,False,True,False
+36,0,12,10,2,L,0,0,0,0,3,10-12-2,RDG-TBL-2,Aiden Fox,Red Dragons,RDG,Thunderbolts,TBL,True,True,False,True,False
+36,0,12,11,1,W,3,1,0,1,0,11-12-1,RDG-STR-1,Aiden Fox,Red Dragons,RDG,Stormriders,STR,True,True,False,True,False
+36,0,12,11,2,L,0,0,0,0,1,11-12-2,RDG-STR-2,Aiden Fox,Red Dragons,RDG,Stormriders,STR,True,True,False,True,False
+38,0,12,10,1,W,3,1,0,0,3,10-12-1,RDG-TBL-1,Jacob Cole,Red Dragons,RDG,Thunderbolts,TBL,True,True,False,False,False
+38,0,12,10,2,L,0,1,0,0,3,10-12-2,RDG-TBL-2,Jacob Cole,Red Dragons,RDG,Thunderbolts,TBL,True,True,False,False,False
+38,0,12,11,1,W,3,1,1,1,0,11-12-1,RDG-STR-1,Jacob Cole,Red Dragons,RDG,Stormriders,STR,True,True,False,False,False
+38,0,12,11,2,L,0,0,0,0,1,11-12-2,RDG-STR-2,Jacob Cole,Red Dragons,RDG,Stormriders,STR,True,True,False,False,False
+37,0,12,10,1,W,3,1,0,0,3,10-12-1,RDG-TBL-1,Logan Shaw,Red Dragons,RDG,Thunderbolts,TBL,True,True,False,False,False
+37,0,12,10,2,L,0,2,0,0,3,10-12-2,RDG-TBL-2,Logan Shaw,Red Dragons,RDG,Thunderbolts,TBL,True,True,False,False,False
+37,0,12,11,1,W,3,2,2,1,0,11-12-1,RDG-STR-1,Logan Shaw,Red Dragons,RDG,Stormriders,STR,True,True,False,False,False
+37,0,12,11,2,L,0,1,0,0,1,11-12-2,RDG-STR-2,Logan Shaw,Red Dragons,RDG,Stormriders,STR,True,True,False,False,False

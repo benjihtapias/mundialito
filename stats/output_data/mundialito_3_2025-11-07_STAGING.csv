@@ -1,0 +1,22 @@
+PlayerId,MundialitoId,TeamId,GamesPlayed,GamesWon,GamesLost,Goals,Assists,CleanSheets,GoalsConceded,PlayerName,TeamName,TeamAbbr,IsNewPlayer,IsNewTeam,IsMVP,IsGoldenBoot,IsPlaymaker
+28,3,7,10,7,3,1,1,,,Aleck,Los Alienigenos FC,LAFC,False,False,False,False,False
+10,3,7,10,7,3,1,0,,,Chris,Los Alienigenos FC,LAFC,False,False,False,False,False
+27,3,7,10,7,3,0,0,,,David,Los Alienigenos FC,LAFC,False,False,False,False,False
+14,3,7,10,7,3,1,1,,,Javi,Los Alienigenos FC,LAFC,False,False,False,False,False
+18,3,7,10,7,3,0,0,,,Julio,Los Alienigenos FC,LAFC,False,False,False,False,False
+5,3,7,10,7,3,1,0,,,Nick Souza,Los Alienigenos FC,LAFC,False,False,False,False,False
+3,3,7,10,7,3,3,1,,,Yayo,Los Alienigenos FC,LAFC,False,False,False,True,False
+19,3,8,7,1,6,0,1,,,Benji,Astral Jeans FC,AJFC,False,False,False,False,False
+9,3,8,7,1,6,1,0,,,Carl,Astral Jeans FC,AJFC,False,False,False,False,False
+23,3,8,7,1,6,0,0,,,Jean,Astral Jeans FC,AJFC,False,False,False,False,False
+4,3,8,7,1,6,0,0,,,Kirby,Astral Jeans FC,AJFC,False,False,False,False,False
+20,3,8,7,1,6,0,0,,,Klee,Astral Jeans FC,AJFC,False,False,False,False,False
+16,3,8,7,1,6,0,0,,,Nick Puras,Astral Jeans FC,AJFC,False,False,False,False,False
+7,3,8,7,1,6,0,0,,,Rodrigo,Astral Jeans FC,AJFC,False,False,False,False,False
+6,3,9,9,4,5,1,0,,,Blanco,Supernatural FC II,SFC,False,False,False,False,False
+21,3,9,9,4,5,0,3,,,Eric,Supernatural FC II,SFC,False,False,False,False,True
+13,3,9,9,4,5,0,0,,,Jayden,Supernatural FC II,SFC,False,False,False,False,False
+8,3,9,9,4,5,1,1,,,Nick Ali,Supernatural FC II,SFC,False,False,False,False,False
+17,3,9,9,4,5,0,0,,,Nico,Supernatural FC II,SFC,False,False,False,False,False
+29,3,9,9,4,5,3,0,,,Sebas Pereira,Supernatural FC II,SFC,False,False,True,True,False
+26,3,9,9,4,5,0,0,,,Tomas,Supernatural FC II,SFC,False,False,False,False,False

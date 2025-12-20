@@ -1,0 +1,22 @@
+PlayerId,MundialitoId,TeamId,GamesPlayed,GamesWon,GamesLost,Goals,Assists,CleanSheets,GoalsConceded,PlayerName,TeamName,TeamAbbr,IsNewPlayer,IsNewTeam,IsMVP,IsGoldenBoot,IsPlaymaker
+6,2,4,6,4,2,1,1,,,Blanco,The Green Goblins,GRG,False,False,False,False,True
+10,2,4,6,4,2,1,0,,,Chris,The Green Goblins,GRG,False,False,False,False,False
+22,2,4,6,4,2,0,0,,,Emma,The Green Goblins,GRG,False,False,False,False,False
+21,2,4,6,4,2,0,1,,,Eric,The Green Goblins,GRG,False,False,True,False,True
+11,2,4,6,4,2,0,1,,,Juboi,The Green Goblins,GRG,False,False,False,False,True
+18,2,4,6,4,2,1,0,,,Julio,The Green Goblins,GRG,False,False,False,False,False
+16,2,4,6,4,2,1,0,,,Nick Puras,The Green Goblins,GRG,False,False,False,False,False
+9,2,5,5,3,2,1,1,,,Carl,Supernatural FC,SFC,False,False,False,False,True
+13,2,5,5,3,2,0,0,,,Jayden,Supernatural FC,SFC,False,False,False,False,False
+23,2,5,5,3,2,2,0,,,Jean,Supernatural FC,SFC,False,False,False,True,False
+25,2,5,5,3,2,0,0,,,Jrod,Supernatural FC,SFC,False,False,False,False,False
+4,2,5,5,3,2,0,0,,,Kirby,Supernatural FC,SFC,False,False,False,False,False
+8,2,5,5,3,2,0,1,,,Nick Ali,Supernatural FC,SFC,False,False,False,False,True
+24,2,5,5,3,2,0,0,,,Rod Sr,Supernatural FC,SFC,False,False,False,False,False
+19,2,6,4,1,3,0,0,,,Benji,Astral FC II,AFC,False,False,False,False,False
+14,2,6,4,1,3,0,0,,,Javi,Astral FC II,AFC,False,False,False,False,False
+20,2,6,4,1,3,0,0,,,Klee,Astral FC II,AFC,False,False,False,False,False
+5,2,6,4,1,3,0,0,,,Nick Souza,Astral FC II,AFC,False,False,False,False,False
+17,2,6,4,1,3,0,0,,,Nico,Astral FC II,AFC,False,False,False,False,False
+7,2,6,4,1,3,0,0,,,Rodrigo,Astral FC II,AFC,False,False,False,False,False
+26,2,6,4,1,3,0,0,,,Tomas,Astral FC II,AFC,False,False,False,False,False

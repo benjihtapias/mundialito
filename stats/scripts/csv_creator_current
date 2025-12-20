@@ -1,0 +1,260 @@
+import pandas as pd
+import pyodbc
+import re
+import os
+import json
+import glob
+
+with open("../config.json", "r") as f:
+    config = json.load(f)
+
+MUND_ID = config["mundialitoId"]
+input_path = config["inputPath"]
+out_path = config["outputPath"]
+
+search_pattern = os.path.join(input_path, f"mundialito_{MUND_ID}*.csv")
+matching_files = glob.glob(search_pattern)
+
+if len(matching_files) == 0:
+    raise FileNotFoundError(f"No file found matching: {search_pattern}")
+
+if len(matching_files) > 1:
+    raise RuntimeError(f"Multiple files found matching: {search_pattern}\nFiles: {matching_files}")
+
+file_path = matching_files[0]
+
+basename = os.path.basename(file_path).replace(".csv", "_STAGING.csv")
+output_csv = os.path.join(out_path, basename)
+
+print("Input file found:", file_path)
+print("Output staging file:", output_csv)
+
+conn = pyodbc.connect(
+    "DRIVER={ODBC Driver 17 for SQL Server};"
+    "SERVER=localhost\\SQLEXPRESS;"
+    "DATABASE=Mundialito;"
+   "Trusted_Connection=yes;"
+)
+cursor = conn.cursor()
+
+MUND_STR = str.split(file_path, "/")[-1]
+MUND_NAME = str.split(MUND_STR, "_")[0].capitalize() + " " + str(MUND_ID)
+MUND_DATE = str.split(str.split(MUND_STR, "_")[2], ".")[0]
+
+df = pd.read_csv(file_path, index_col=False)
+df = df.drop(columns=df.columns[df.columns.str.startswith("Unnamed")])
+
+# DATA VALIDATION
+
+
+# NEW HEADERS
+
+EXPECTED_COLUMNS = [
+    "Name", "TeamName", "TeamAbbr",
+    "OppName", "OppAbbr",
+    "WL", "Goals", "Assists",
+    "GoalsConceded", "Game", "MVP"
+]
+
+"""
+
+# OLD HEADERS
+EXPECTED_COLUMNS = [
+    "Name", "TeamName", "TeamAbbr", "GamesPlayed", "GamesWon", "GamesLost", "Goals", "Assists", "MVP"
+]
+
+"""
+print(df.columns)
+assert list(df.columns) == EXPECTED_COLUMNS
+
+# NEW DATA VALIDATION
+
+# Win loss input check
+
+assert df["WL"].isin(["W", "L", "D"]).all()
+
+# Total goals scored == Total goals conceded
+
+game_ids = []
+
+for _, row in df.iterrows():
+    team_abbr = row["TeamAbbr"]
+    opp_abbr = row["OppAbbr"]
+    game = row["Game"]
+
+    if team_abbr < opp_abbr:
+        game_id = f"{team_abbr}-{opp_abbr}-{game}"
+    else:
+        game_id = f"{opp_abbr}-{team_abbr}-{game}"
+
+    game_ids.append(game_id)
+
+df["GameIdStr"] = game_ids
+
+for game_id_str, g in df.groupby("GameIdStr"):
+    teams = g["TeamAbbr"].unique()
+
+    if len(teams) != 2:
+        raise ValueError(f"Game {game_id_str} does not have exactly 2 teams")
+
+    teamA, teamB = teams[0], teams[1]
+
+    A_goals = g[g["TeamAbbr"] == teamA]["Goals"].sum()
+    A_conceded = g[g["TeamAbbr"] == teamA]["GoalsConceded"].max()
+
+    B_goals = g[g["TeamAbbr"] == teamB]["Goals"].sum()
+    B_conceded = g[g["TeamAbbr"] == teamB]["GoalsConceded"].max()
+
+    assert A_goals == B_conceded, f"Mismatch in game {game_id_str}: {teamA} scored {A_goals} but {teamB} conceded {B_conceded}"
+    assert B_goals == A_conceded, f"Mismatch in game {game_id_str}: {teamB} scored {B_goals} but {teamA} conceded {A_conceded}"
+
+
+df["CleanSheet"] = (df["GoalsConceded"] == 0).astype(int)
+
+# OLD DATA STATS
+
+# existing players
+cursor.execute("SELECT PlayerId, Name FROM Players;")
+existing_players = cursor.fetchall()
+
+name_to_existing_player_id = {row.Name: row.PlayerId for row in existing_players}
+
+cursor.execute("SELECT ISNULL(MAX(PlayerId), 0) FROM Players;")
+max_player_id = cursor.fetchone()[0]
+
+print(f"Existing players: {len(name_to_existing_player_id)}, max PlayerId in DB: {max_player_id}")
+
+# existing teams (only used when pushing to database a second time for the same tourney)
+cursor.execute("""
+    SELECT TeamId, TeamName, TeamAbbreviation, MundialitoId
+    FROM Teams;
+""")
+existing_teams = cursor.fetchall()
+
+existing_team_key_to_id = {
+    (row.TeamName, row.TeamAbbreviation, row.MundialitoId): row.TeamId
+    for row in existing_teams
+}
+
+print(f"Existing teams: {len(existing_team_key_to_id)} total")
+
+cursor.execute("SELECT ISNULL(MAX(TeamId), 0) FROM Teams;")
+max_team_id = cursor.fetchone()[0]
+print(f"Max TeamId in DB: {max_team_id}")
+
+player_name_to_id = dict(name_to_existing_player_id)
+player_name_is_new = {name: False for name in name_to_existing_player_id}
+
+for name in df["Name"].unique():
+    if name not in player_name_to_id:
+        max_player_id += 1
+        player_name_to_id[name] = max_player_id
+        player_name_is_new[name] = True
+
+team_key_to_id = {}
+team_key_is_new = {}
+
+unique_teams = df[["TeamName", "TeamAbbr"]].drop_duplicates()
+
+for _, row in unique_teams.iterrows():
+    team_name = row["TeamName"]
+    team_abbr = row["TeamAbbr"]
+    key = (team_name, team_abbr, MUND_ID)
+
+    if key in existing_team_key_to_id:
+        team_id = existing_team_key_to_id[key]
+        is_new = False
+    else:
+        max_team_id += 1
+        team_id = max_team_id
+        is_new = True
+
+    team_key_to_id[key] = team_id
+    team_key_is_new[key] = is_new
+
+print(f"Total players in staging: {len(player_name_to_id)}")
+print(f"Total teams in staging for Mundialito {MUND_ID}: {len(team_key_to_id)}")
+print(f"Total games in staging for Mundialito {MUND_ID}: {len(team_key_to_id)}")
+
+max_goals = df["Goals"].max()
+max_assists = df["Assists"].max()
+
+golden_boot_keys = set(df.loc[df["Goals"] == max_goals, "Name"])
+playmaker_keys = set(df.loc[df["Assists"] == max_assists, "Name"])
+mvp_keys = set(df.loc[df["MVP"] == 1, "Name"])
+
+
+print(golden_boot_keys)
+print(playmaker_keys)
+
+rows = []
+
+for _, row in df.iterrows():
+    name = row["Name"]
+    team_name = row["TeamName"]
+    team_abbr = row["TeamAbbr"]
+    opp_name = row["OppName"]
+    opp_abbr = row["OppAbbr"]
+    key = (team_name, team_abbr, MUND_ID)
+    opp_key = (opp_name, opp_abbr, MUND_ID)
+
+    player_id = player_name_to_id[name]
+    team_id = team_key_to_id[key]
+    opp_id = team_key_to_id[opp_key]
+
+    is_mvp = name in mvp_keys
+    is_golden_boot = name in golden_boot_keys
+    is_playmaker = name in playmaker_keys
+
+    if team_id < opp_id:
+        game_id = str(team_id) + "-" + str(opp_id) + "-" + str(row["Game"])
+    else:
+        game_id = str(opp_id) + "-" + str(team_id) + "-" + str(row["Game"])
+
+    match row["WL"]:
+        case "W":
+            pts = 3
+        case "D":
+            pts = 1
+        case "L":
+            pts = 0
+        case _:
+            print(f"Invalid WL input for game {str(row["GameIdStr"])}")
+
+    rows.append({
+        "PlayerId": player_id,
+        "MundialitoId": MUND_ID,
+        "TeamId": team_id,
+        "OppId": opp_id,
+        "Game": int(row["Game"]),
+        "WL": str(row["WL"]),
+        "Pts": pts,
+        "Goals": int(row["Goals"]),
+        "Assists": int(row["Assists"]),
+        "CleanSheet": int(row["CleanSheet"]),
+        "GoalsConceded": int(row["GoalsConceded"]),
+
+        "GameId": game_id,
+        "GameIdStr": str(row["GameIdStr"]),
+
+        "PlayerName": name,
+        "TeamName": team_name,
+        "TeamAbbr": team_abbr,
+        "OppName": opp_name,
+        "OppAbbr": opp_abbr,
+        "IsNewPlayer": player_name_is_new.get(name, False),
+        "IsNewTeam": team_key_is_new[key],
+
+        "IsMVP": is_mvp,
+        "IsGoldenBoot": is_golden_boot,
+        "IsPlaymaker": is_playmaker,
+    })
+
+staging_df = pd.DataFrame(rows)
+
+staging_df = staging_df.sort_values(
+    ["TeamId", "PlayerName"]
+).reset_index(drop=True)
+
+staging_df.to_csv(output_csv, index=False)
+print(f"\nStaging CSV created (no DB modifications):\n{output_csv}")
