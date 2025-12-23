@@ -11,6 +11,9 @@ backend/**/obj/
 .env
 appsettings.Development.json
 
+input_data/
+output_data/
+
 # OS
 .DS_Store
 Thumbs.db

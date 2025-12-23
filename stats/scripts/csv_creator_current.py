@@ -176,15 +176,27 @@ print(f"Total players in staging: {len(player_name_to_id)}")
 print(f"Total teams in staging for Mundialito {MUND_ID}: {len(team_key_to_id)}")
 print(f"Total games in staging for Mundialito {MUND_ID}: {len(team_key_to_id)}")
 
-max_goals = df["Goals"].max()
-max_assists = df["Assists"].max()
+player_ga = df.groupby(
+        ["Name", "TeamAbbr"],
+        as_index=False
+    ).agg({
+        "Goals": "sum",
+        "Assists": "sum",
+    })
 
-golden_boot_keys = set(df.loc[df["Goals"] == max_goals, "Name"])
-playmaker_keys = set(df.loc[df["Assists"] == max_assists, "Name"])
+max_goals = player_ga["Goals"].max()
+max_assists = player_ga["Assists"].max()
+
+golden_boot_keys = set(player_ga.loc[player_ga["Goals"] == max_goals, "Name"])
+playmaker_keys = set(player_ga.loc[player_ga["Assists"] == max_assists, "Name"])
 mvp_keys = set(df.loc[df["MVP"] == 1, "Name"])
 
-
+print("Max Goals: ")
+print(max_goals)
+print("Golden Boot Winners: ")
 print(golden_boot_keys)
+print(max_assists)
+print("Playmaker Winners")
 print(playmaker_keys)
 
 rows = []
