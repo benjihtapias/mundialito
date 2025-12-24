@@ -1,0 +1,6 @@
+@Mundialito.Api_HostAddress = http://localhost:5144
+
+GET {{Mundialito.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

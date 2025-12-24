@@ -1,0 +1,67 @@
+@page "/tournaments/{MundialitoId:int}"
+
+@using Mundialito.Web.Models
+@using Mundialito.Web.Services
+@inject PlayerStatsService PlayerStatsService
+
+<h1 class="mb-3">Mundialito @MundialitoId – Player Stats</h1>
+
+@if (isLoading)
+{
+    <p>Loading stats...</p>
+}
+else if (players.Count == 0)
+{
+    <p>No stats found for this tournament.</p>
+}
+else
+{
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Player</th>
+                <th>Team</th>
+                <th>Games</th>
+                <th>W</th>
+                <th>D</th>
+                <th>L</th>
+                <th>G</th>
+                <th>A</th>
+                <th>G/A</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var p in players.Select((val, idx) => new { val, idx }))
+        {
+            <tr>
+                <td>@(p.idx + 1)</td>
+                <td>@p.val.PlayerName</td>
+                <td>@p.val.TeamAbbr (@p.val.TeamName)</td>
+                <td>@p.val.GamesPlayed</td>
+                <td>@p.val.GamesWon</td>
+                <td>@p.val.GamesDrawn</td>
+                <td>@p.val.GamesLost</td>
+                <td>@p.val.Goals</td>
+                <td>@p.val.Assists</td>
+                <td>@(p.val.Goals + p.val.Assists)</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    [Parameter]
+    public int MundialitoId { get; set; }
+
+    private List<PlayerTournamentStatsDto> players = new();
+    private bool isLoading = true;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        isLoading = true;
+        players = await PlayerStatsService.GetPlayerStatsAsync(MundialitoId);
+        isLoading = false;
+    }
+}

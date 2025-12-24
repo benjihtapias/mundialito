@@ -4,7 +4,7 @@ import os
 import glob
 import json
 
-with open("../../config.json", "r") as f:
+with open("../../../config.json", "r") as f:
     config = json.load(f)
 
 MUND_ID = config["mundialitoId"] 
@@ -22,12 +22,14 @@ if len(matching_files) > 1:
 staging_csv = matching_files[0]
 MUND_DATE = str.split(str.split(staging_csv, "_")[3], ".")[0]
 
-conn = pyodbc.connect(
-    "DRIVER={ODBC Driver 17 for SQL Server};"
-    "SERVER=localhost\\SQLEXPRESS;"
-    "DATABASE=Mundialito;"
+conn_str = (
+    f"DRIVER={{ODBC Driver 17 for SQL Server}};"
+    f"SERVER={config['server']};"
+    f"DATABASE={config['database']};"
     "Trusted_Connection=yes;"
 )
+
+conn = pyodbc.connect(conn_str)
 cursor = conn.cursor()
 
 conn.autocommit = False
@@ -115,7 +117,7 @@ try:
 
             cursor.execute(
                 """
-                INSERT INTO Teams (TeamId, MundialitoId, TeamName, TeamAbbreviation)
+                INSERT INTO Teams (TeamId, MundialitoId, TeamName, TeamAbbr)
                 VALUES (?, ?, ?, ?)
                 """,
                 team_id, mid, team_name, team_abbr

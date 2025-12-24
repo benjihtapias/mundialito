@@ -1,0 +1,11 @@
+{
+    "mundialitoId": 4,
+    
+    "inputPath": "../../input_data/",
+    "outputPath": "../../output_data",
+
+    "server": "localhost\\SQLEXPRESS",
+    "database": "Mundialito",
+    "username": "",
+    "password": ""
+}

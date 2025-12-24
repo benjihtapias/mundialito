@@ -5,7 +5,7 @@ import os
 import json
 import glob
 
-with open("../config.json", "r") as f:
+with open("../../../config.json", "r") as f:
     config = json.load(f)
 
 MUND_ID = config["mundialitoId"]
@@ -29,12 +29,14 @@ output_csv = os.path.join(out_path, basename)
 print("Input file found:", file_path)
 print("Output staging file:", output_csv)
 
-conn = pyodbc.connect(
-    "DRIVER={ODBC Driver 17 for SQL Server};"
-    "SERVER=localhost\\SQLEXPRESS;"
-    "DATABASE=Mundialito;"
-   "Trusted_Connection=yes;"
+conn_str = (
+    f"DRIVER={{ODBC Driver 17 for SQL Server}};"
+    f"SERVER={config['server']};"
+    f"DATABASE={config['database']};"
+    "Trusted_Connection=yes;"
 )
+
+conn = pyodbc.connect(conn_str)
 cursor = conn.cursor()
 
 MUND_STR = str.split(file_path, "/")[-1]
@@ -98,13 +100,13 @@ print(f"Existing players: {len(name_to_existing_player_id)}, max PlayerId in DB:
 
 # existing teams (only used when pushing to database a second time for the same tourney)
 cursor.execute("""
-    SELECT TeamId, TeamName, TeamAbbreviation, MundialitoId
+    SELECT TeamId, TeamName, TeamAbbr, MundialitoId
     FROM Teams;
 """)
 existing_teams = cursor.fetchall()
 
 existing_team_key_to_id = {
-    (row.TeamName, row.TeamAbbreviation, row.MundialitoId): row.TeamId
+    (row.TeamName, row.TeamAbbr, row.MundialitoId): row.TeamId
     for row in existing_teams
 }
 

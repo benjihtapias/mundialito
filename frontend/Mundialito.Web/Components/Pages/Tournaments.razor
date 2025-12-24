@@ -1,0 +1,55 @@
+@page "/tournaments"
+
+@using Mundialito.Web.Models
+@inject Mundialito.Web.Services.TournamentService TournamentService
+
+<h1 class="mb-3">Mundialitos</h1>
+
+@if (isLoading)
+{
+    <p>Loading tournaments...</p>
+}
+else if (tournaments.Count == 0)
+{
+    <p>No tournaments found.</p>
+}
+else
+{
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var t in tournaments)
+        {
+            <tr>
+                <td>@t.MundialitoId</td>
+                <td>@t.Name</td>
+                <td>@t.Date</td>
+                <td>
+                    <a class="btn btn-sm btn-primary" href="/tournaments/@t.MundialitoId">
+                        View players
+                    </a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<MundialitosDto> tournaments = new();
+    private bool isLoading = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        isLoading = true;
+        tournaments = await TournamentService.GetTournamentsAsync();
+        isLoading = false;
+    }
+}
