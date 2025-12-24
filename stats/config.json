@@ -1,6 +1,6 @@
 {
     "mundialitoId": 4,
     
-    "inputPath": "../input_data/",
-    "outputPath": "../output_data"
+    "inputPath": "../../input_data/",
+    "outputPath": "../../output_data"
 }

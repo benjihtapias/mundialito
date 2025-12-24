@@ -4,7 +4,7 @@ import os
 import glob
 import json
 
-with open("../config.json", "r") as f:
+with open("../../config.json", "r") as f:
     config = json.load(f)
 
 MUND_ID = config["mundialitoId"] 
