@@ -4,7 +4,7 @@ import os
 import glob
 import json
 
-with open("../config.json", "r") as f:
+with open("../../config.json", "r") as f:
     config = json.load(f)
 
 MUND_ID = config["mundialitoId"] 
@@ -202,12 +202,9 @@ try:
         "GamesWon": "max",
         "GamesLost": "max",
         "Goals": "sum",
+        "Assists": "sum",
         "GoalsConceded": "sum",
         "CleanSheets": "sum",
-    })
-
-    team_group = team_group.rename(columns={
-            "Goals": "GoalsScored"
     })
 
     max_wins = team_group["GamesWon"].max()
@@ -223,15 +220,16 @@ try:
             INSERT INTO TeamTournamentStats
                 (TeamId, MundialitoId,
                 GamesPlayed, GamesWon, GamesLost,
-                GoalsScored, GoalsConceded, CleanSheets, IsChampion)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                Goals, Assists, GoalsConceded, CleanSheets, IsChampion)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             int(row["TeamId"]),
             int(row["MundialitoId"]),
             int(row["GamesPlayed"]),
             int(row["GamesWon"]),
             int(row["GamesLost"]),
-            int(row["GoalsScored"]),
+            int(row["Goals"]),
+            int(row["Assists"]),
             None,
             None,
             int(row["IsChampion"])

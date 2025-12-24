@@ -44,7 +44,7 @@ required_columns = [
     "Pts",
     "Goals", 
     "Assists", 
-    "CleanSheets", 
+    "CleanSheet", 
     "GoalsConceded",
     "GameId",
     "GameIdStr",
@@ -161,26 +161,34 @@ try:
         df.assign(
             TeamAId=lambda x: x[["TeamId", "OppId"]].min(axis=1),
             TeamBId=lambda x: x[["TeamId", "OppId"]].max(axis=1),
-        )[["GameId", "MundialitoId", "TeamAId", "TeamBId"]]
-        .drop_duplicates(subset=["GameId", "TeamAId", "TeamBId"])
-        .reset_index(drop=True)
+        )
+        .assign(
+            GoalsA=lambda x: x["Goals"].where(x["TeamId"] == x["TeamAId"], 0),
+            GoalsB=lambda x: x["GoalsConceded"].where(x["TeamId"] == x["TeamAId"], 0),
+        )
+        .groupby(["GameId", "MundialitoId", "TeamAId", "TeamBId"], as_index=False)
+        .agg(
+            GoalsA=("GoalsA", "sum"),
+            GoalsB=("GoalsB", "max"),
+        )
     )
 
     print(games_df)
 
-    print(f"Inserting {len(df)} Games rows...")
+    print(f"Inserting {len(games_df)} Games rows...")
     for _, row in games_df.iterrows():
         cursor.execute(
             """
             INSERT INTO Games
-                (GameId, MundialitoId,
-                TeamAId, TeamBId)
-            VALUES (?, ?, ?, ?)
+                (GameId, MundialitoId, TeamAId, TeamBId, GoalsA, GoalsB)
+            VALUES (?, ?, ?, ?, ?, ?)
             """,
             str(row["GameId"]),
             int(row["MundialitoId"]),
-            int(row["TeamAId"]),  
-            int(row["TeamBId"])
+            int(row["TeamAId"]),
+            int(row["TeamBId"]),
+            int(row["GoalsA"]),
+            int(row["GoalsB"])
         )
 
     # ------ INSERTING PLAYERGAMESTATS -------
@@ -196,12 +204,13 @@ try:
         cursor.execute(
             """
             INSERT INTO PlayerGameStats
-                (GameId, PlayerId, TeamId
+                (GameId, MundialitoId, PlayerId, TeamId,
                 OppTeamId, WL, Goals,
-                Assits, GoalsConceded)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                Assists, GoalsConceded)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             str(row["GameId"]),
+            int(row["MundialitoId"]),
             int(row["PlayerId"]),
             int(row["TeamId"]),  
             int(row["OppId"]),
@@ -230,7 +239,7 @@ try:
         Goals=("Goals", "sum"),
         Assists=("Assists", "sum"),
         GoalsConceded=("GoalsConceded", "sum"),
-        CleanSheets=("CleanSheets", "sum"),
+        CleanSheets=("CleanSheet", "sum"),
     )
 
     print(pts_df)
@@ -266,8 +275,17 @@ try:
         mundialito_id
     )
 
-    print(f"Inserting {len(df)} PlayerAwards rows...")
-    for _, row in df.iterrows():
+    awards_df = (
+        df.groupby(["PlayerId", "MundialitoId"], as_index=False)
+          .agg({
+              "IsMVP": "max",
+              "IsGoldenBoot": "max",
+              "IsPlaymaker": "max",
+          })
+    )
+
+    print(f"Inserting {len(awards_df)} PlayerAwards rows...")
+    for _, row in awards_df.iterrows():
 
         player_id = int(row["PlayerId"])
         mid = int(row["MundialitoId"])
@@ -326,14 +344,15 @@ try:
             """
             INSERT INTO TeamTournamentStats
                 (TeamId, MundialitoId,
-                GamesPlayed, GamesWon, GamesLost,
-                GoalsScored, AssistsMade, GoalsConceded, CleanSheets, IsChampion)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                GamesPlayed, GamesWon, GamesDrawn, GamesLost,
+                Goals, Assists, GoalsConceded, CleanSheets, IsChampion)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             int(row["TeamId"]),
             int(row["MundialitoId"]),
             int(row["GamesPlayed"]),
             int(row["GamesWon"]),
+            int(row["GamesDrawn"]),
             int(row["GamesLost"]),
             int(row["Goals"]),
             int(row["Assists"]),
