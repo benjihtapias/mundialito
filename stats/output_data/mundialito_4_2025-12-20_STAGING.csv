@@ -1,0 +1,281 @@
+PlayerId,MundialitoId,TeamId,OppId,Game,WL,Pts,Goals,Assists,CleanSheet,GoalsConceded,GameId,GameIdStr,PlayerName,TeamName,TeamAbbr,OppName,OppAbbr,IsNewPlayer,IsNewTeam,IsMVP,IsGoldenBoot,IsPlaymaker
+31,4,10,13,1,L,0,0,0,0,2,10-13-1,BFR-PLA-1,Adrian G,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+31,4,10,11,1,W,3,0,0,1,0,10-11-1,BFR-MID-1,Adrian G,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,False,False
+31,4,10,13,2,W,3,0,0,0,1,10-13-2,BFR-PLA-2,Adrian G,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+31,4,10,12,1,D,1,0,0,0,1,10-12-1,BFR-DIC-1,Adrian G,Bipe and Friends,BFR,Dictadores FC,DIC,False,False,False,False,False
+31,4,10,13,3,D,1,0,0,1,0,10-13-3,BFR-PLA-3,Adrian G,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+31,4,10,11,2,D,1,0,0,1,0,10-11-2,BFR-MID-2,Adrian G,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,False,False
+31,4,10,11,3,W,3,1,0,1,0,10-11-3,BFR-MID-3,Adrian G,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,False,False
+31,4,10,13,4,D,1,0,0,0,1,10-13-4,BFR-PLA-4,Adrian G,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+31,4,10,12,2,W,3,0,0,1,0,10-12-2,BFR-DIC-2,Adrian G,Bipe and Friends,BFR,Dictadores FC,DIC,False,False,False,False,False
+2,4,10,13,1,L,0,0,0,0,2,10-13-1,BFR-PLA-1,Bipe,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,True
+2,4,10,11,1,W,3,0,1,1,0,10-11-1,BFR-MID-1,Bipe,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,False,True
+2,4,10,13,2,W,3,0,0,0,1,10-13-2,BFR-PLA-2,Bipe,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,True
+2,4,10,12,1,D,1,1,0,0,1,10-12-1,BFR-DIC-1,Bipe,Bipe and Friends,BFR,Dictadores FC,DIC,False,False,False,False,True
+2,4,10,13,3,D,1,0,0,1,0,10-13-3,BFR-PLA-3,Bipe,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,True
+2,4,10,11,2,D,1,0,0,1,0,10-11-2,BFR-MID-2,Bipe,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,False,True
+2,4,10,11,3,W,3,0,1,1,0,10-11-3,BFR-MID-3,Bipe,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,False,True
+2,4,10,13,4,D,1,0,1,0,1,10-13-4,BFR-PLA-4,Bipe,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,True
+2,4,10,12,2,W,3,0,1,1,0,10-12-2,BFR-DIC-2,Bipe,Bipe and Friends,BFR,Dictadores FC,DIC,False,False,False,False,True
+9,4,10,13,1,L,0,0,0,0,2,10-13-1,BFR-PLA-1,Carl,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+9,4,10,11,1,W,3,1,0,1,0,10-11-1,BFR-MID-1,Carl,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,False,False
+9,4,10,13,2,W,3,0,0,0,1,10-13-2,BFR-PLA-2,Carl,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+9,4,10,12,1,D,1,0,0,0,1,10-12-1,BFR-DIC-1,Carl,Bipe and Friends,BFR,Dictadores FC,DIC,False,False,False,False,False
+9,4,10,13,3,D,1,0,0,1,0,10-13-3,BFR-PLA-3,Carl,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+9,4,10,11,2,D,1,0,0,1,0,10-11-2,BFR-MID-2,Carl,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,False,False
+9,4,10,11,3,W,3,0,0,1,0,10-11-3,BFR-MID-3,Carl,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,False,False
+9,4,10,13,4,D,1,1,0,0,1,10-13-4,BFR-PLA-4,Carl,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+9,4,10,12,2,W,3,0,0,1,0,10-12-2,BFR-DIC-2,Carl,Bipe and Friends,BFR,Dictadores FC,DIC,False,False,False,False,False
+30,4,10,13,1,L,0,0,0,0,2,10-13-1,BFR-PLA-1,Max,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,True,False
+30,4,10,11,1,W,3,1,0,1,0,10-11-1,BFR-MID-1,Max,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,True,False
+30,4,10,13,2,W,3,1,1,0,1,10-13-2,BFR-PLA-2,Max,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,True,False
+30,4,10,12,1,D,1,0,1,0,1,10-12-1,BFR-DIC-1,Max,Bipe and Friends,BFR,Dictadores FC,DIC,False,False,False,True,False
+30,4,10,13,3,D,1,0,0,1,0,10-13-3,BFR-PLA-3,Max,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,True,False
+30,4,10,11,2,D,1,0,0,1,0,10-11-2,BFR-MID-2,Max,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,True,False
+30,4,10,11,3,W,3,1,0,1,0,10-11-3,BFR-MID-3,Max,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,True,False
+30,4,10,13,4,D,1,0,0,0,1,10-13-4,BFR-PLA-4,Max,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,True,False
+30,4,10,12,2,W,3,1,0,1,0,10-12-2,BFR-DIC-2,Max,Bipe and Friends,BFR,Dictadores FC,DIC,False,False,False,True,False
+16,4,10,13,1,L,0,0,0,0,2,10-13-1,BFR-PLA-1,Nick Puras,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+16,4,10,11,1,W,3,0,0,1,0,10-11-1,BFR-MID-1,Nick Puras,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,False,False
+16,4,10,13,2,W,3,0,0,0,1,10-13-2,BFR-PLA-2,Nick Puras,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+16,4,10,12,1,D,1,0,0,0,1,10-12-1,BFR-DIC-1,Nick Puras,Bipe and Friends,BFR,Dictadores FC,DIC,False,False,False,False,False
+16,4,10,13,3,D,1,0,0,1,0,10-13-3,BFR-PLA-3,Nick Puras,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+16,4,10,11,2,D,1,0,0,1,0,10-11-2,BFR-MID-2,Nick Puras,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,False,False
+16,4,10,11,3,W,3,0,1,1,0,10-11-3,BFR-MID-3,Nick Puras,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,False,False
+16,4,10,13,4,D,1,0,0,0,1,10-13-4,BFR-PLA-4,Nick Puras,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+16,4,10,12,2,W,3,0,0,1,0,10-12-2,BFR-DIC-2,Nick Puras,Bipe and Friends,BFR,Dictadores FC,DIC,False,False,False,False,False
+1,4,10,13,1,L,0,0,0,0,2,10-13-1,BFR-PLA-1,Oski,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+1,4,10,11,1,W,3,0,0,1,0,10-11-1,BFR-MID-1,Oski,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,False,False
+1,4,10,13,2,W,3,1,0,0,1,10-13-2,BFR-PLA-2,Oski,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+1,4,10,12,1,D,1,0,0,0,1,10-12-1,BFR-DIC-1,Oski,Bipe and Friends,BFR,Dictadores FC,DIC,False,False,False,False,False
+1,4,10,13,3,D,1,0,0,1,0,10-13-3,BFR-PLA-3,Oski,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+1,4,10,11,2,D,1,0,0,1,0,10-11-2,BFR-MID-2,Oski,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,False,False
+1,4,10,11,3,W,3,0,0,1,0,10-11-3,BFR-MID-3,Oski,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,False,False
+1,4,10,13,4,D,1,0,0,0,1,10-13-4,BFR-PLA-4,Oski,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+1,4,10,12,2,W,3,1,0,1,0,10-12-2,BFR-DIC-2,Oski,Bipe and Friends,BFR,Dictadores FC,DIC,False,False,False,False,False
+32,4,10,13,1,L,0,0,0,0,2,10-13-1,BFR-PLA-1,Vizen,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+32,4,10,11,1,W,3,0,0,1,0,10-11-1,BFR-MID-1,Vizen,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,False,False
+32,4,10,13,2,W,3,0,0,0,1,10-13-2,BFR-PLA-2,Vizen,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+32,4,10,12,1,D,1,0,0,0,1,10-12-1,BFR-DIC-1,Vizen,Bipe and Friends,BFR,Dictadores FC,DIC,False,False,False,False,False
+32,4,10,13,3,D,1,0,0,1,0,10-13-3,BFR-PLA-3,Vizen,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+32,4,10,11,2,D,1,0,0,1,0,10-11-2,BFR-MID-2,Vizen,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,False,False
+32,4,10,11,3,W,3,0,0,1,0,10-11-3,BFR-MID-3,Vizen,Bipe and Friends,BFR,Mid Diff FC,MID,False,False,False,False,False
+32,4,10,13,4,D,1,0,0,0,1,10-13-4,BFR-PLA-4,Vizen,Bipe and Friends,BFR,La  Plancha FC,PLA,False,False,False,False,False
+32,4,10,12,2,W,3,0,0,1,0,10-12-2,BFR-DIC-2,Vizen,Bipe and Friends,BFR,Dictadores FC,DIC,False,False,False,False,False
+19,4,11,13,1,L,0,0,0,0,2,11-13-1,MID-PLA-1,Benji,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+19,4,11,12,1,W,3,0,0,0,1,11-12-1,DIC-MID-1,Benji,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+19,4,11,10,1,L,0,0,0,0,2,10-11-1,BFR-MID-1,Benji,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+19,4,11,12,2,L,0,0,0,0,1,11-12-2,DIC-MID-2,Benji,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+19,4,11,13,2,L,0,0,0,0,2,11-13-2,MID-PLA-2,Benji,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+19,4,11,10,2,D,1,0,0,1,0,10-11-2,BFR-MID-2,Benji,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+19,4,11,12,3,D,1,0,0,1,0,11-12-3,DIC-MID-3,Benji,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+19,4,11,10,3,L,0,0,0,0,2,10-11-3,BFR-MID-3,Benji,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+19,4,11,13,3,L,0,0,0,0,2,11-13-3,MID-PLA-3,Benji,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+14,4,11,13,1,L,0,0,0,0,2,11-13-1,MID-PLA-1,Javi,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+14,4,11,12,1,W,3,1,0,0,1,11-12-1,DIC-MID-1,Javi,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+14,4,11,10,1,L,0,0,0,0,2,10-11-1,BFR-MID-1,Javi,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+14,4,11,12,2,L,0,0,0,0,1,11-12-2,DIC-MID-2,Javi,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+14,4,11,13,2,L,0,0,0,0,2,11-13-2,MID-PLA-2,Javi,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+14,4,11,10,2,D,1,0,0,1,0,10-11-2,BFR-MID-2,Javi,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+14,4,11,12,3,D,1,0,0,1,0,11-12-3,DIC-MID-3,Javi,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+14,4,11,10,3,L,0,0,0,0,2,10-11-3,BFR-MID-3,Javi,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+14,4,11,13,3,L,0,0,1,0,2,11-13-3,MID-PLA-3,Javi,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+20,4,11,13,1,L,0,0,0,0,2,11-13-1,MID-PLA-1,Klee,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+20,4,11,12,1,W,3,0,0,0,1,11-12-1,DIC-MID-1,Klee,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+20,4,11,10,1,L,0,0,0,0,2,10-11-1,BFR-MID-1,Klee,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+20,4,11,12,2,L,0,0,0,0,1,11-12-2,DIC-MID-2,Klee,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+20,4,11,13,2,L,0,0,0,0,2,11-13-2,MID-PLA-2,Klee,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+20,4,11,10,2,D,1,0,0,1,0,10-11-2,BFR-MID-2,Klee,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+20,4,11,12,3,D,1,0,0,1,0,11-12-3,DIC-MID-3,Klee,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+20,4,11,10,3,L,0,0,0,0,2,10-11-3,BFR-MID-3,Klee,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+20,4,11,13,3,L,0,0,0,0,2,11-13-3,MID-PLA-3,Klee,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+33,4,11,13,1,L,0,0,0,0,2,11-13-1,MID-PLA-1,Martin,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+33,4,11,12,1,W,3,0,0,0,1,11-12-1,DIC-MID-1,Martin,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+33,4,11,10,1,L,0,0,0,0,2,10-11-1,BFR-MID-1,Martin,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+33,4,11,12,2,L,0,0,0,0,1,11-12-2,DIC-MID-2,Martin,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+33,4,11,13,2,L,0,0,0,0,2,11-13-2,MID-PLA-2,Martin,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+33,4,11,10,2,D,1,0,0,1,0,10-11-2,BFR-MID-2,Martin,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+33,4,11,12,3,D,1,0,0,1,0,11-12-3,DIC-MID-3,Martin,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+33,4,11,10,3,L,0,0,0,0,2,10-11-3,BFR-MID-3,Martin,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+33,4,11,13,3,L,0,0,0,0,2,11-13-3,MID-PLA-3,Martin,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+17,4,11,13,1,L,0,0,0,0,2,11-13-1,MID-PLA-1,Nico,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+17,4,11,12,1,W,3,0,0,0,1,11-12-1,DIC-MID-1,Nico,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+17,4,11,10,1,L,0,0,0,0,2,10-11-1,BFR-MID-1,Nico,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+17,4,11,12,2,L,0,0,0,0,1,11-12-2,DIC-MID-2,Nico,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+17,4,11,13,2,L,0,0,0,0,2,11-13-2,MID-PLA-2,Nico,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+17,4,11,10,2,D,1,0,0,1,0,10-11-2,BFR-MID-2,Nico,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+17,4,11,12,3,D,1,0,0,1,0,11-12-3,DIC-MID-3,Nico,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+17,4,11,10,3,L,0,0,0,0,2,10-11-3,BFR-MID-3,Nico,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+17,4,11,13,3,L,0,1,0,0,2,11-13-3,MID-PLA-3,Nico,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+7,4,11,13,1,L,0,0,0,0,2,11-13-1,MID-PLA-1,Rodrigo,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+7,4,11,12,1,W,3,1,1,0,1,11-12-1,DIC-MID-1,Rodrigo,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+7,4,11,10,1,L,0,0,0,0,2,10-11-1,BFR-MID-1,Rodrigo,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+7,4,11,12,2,L,0,0,0,0,1,11-12-2,DIC-MID-2,Rodrigo,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+7,4,11,13,2,L,0,0,0,0,2,11-13-2,MID-PLA-2,Rodrigo,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+7,4,11,10,2,D,1,0,0,1,0,10-11-2,BFR-MID-2,Rodrigo,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+7,4,11,12,3,D,1,0,0,1,0,11-12-3,DIC-MID-3,Rodrigo,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+7,4,11,10,3,L,0,0,0,0,2,10-11-3,BFR-MID-3,Rodrigo,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+7,4,11,13,3,L,0,0,0,0,2,11-13-3,MID-PLA-3,Rodrigo,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+26,4,11,13,1,L,0,0,0,0,2,11-13-1,MID-PLA-1,Tomas,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+26,4,11,12,1,W,3,0,0,0,1,11-12-1,DIC-MID-1,Tomas,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+26,4,11,10,1,L,0,0,0,0,2,10-11-1,BFR-MID-1,Tomas,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+26,4,11,12,2,L,0,0,0,0,1,11-12-2,DIC-MID-2,Tomas,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+26,4,11,13,2,L,0,0,0,0,2,11-13-2,MID-PLA-2,Tomas,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+26,4,11,10,2,D,1,0,0,1,0,10-11-2,BFR-MID-2,Tomas,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+26,4,11,12,3,D,1,0,0,1,0,11-12-3,DIC-MID-3,Tomas,Mid Diff FC,MID,Dictadores FC,DIC,False,False,False,False,False
+26,4,11,10,3,L,0,0,0,0,2,10-11-3,BFR-MID-3,Tomas,Mid Diff FC,MID,Bipe and Friends,BFR,False,False,False,False,False
+26,4,11,13,3,L,0,0,0,0,2,11-13-3,MID-PLA-3,Tomas,Mid Diff FC,MID,La  Plancha FC,PLA,False,False,False,False,False
+10,4,12,13,1,L,0,0,0,0,1,12-13-1,DIC-PLA-1,Chris,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+10,4,12,11,1,L,0,0,0,0,2,11-12-1,DIC-MID-1,Chris,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+10,4,12,10,1,D,1,0,0,0,1,10-12-1,BFR-DIC-1,Chris,Dictadores FC,DIC,Bipe and Friends,BFR,False,False,False,False,False
+10,4,12,11,2,W,3,0,0,1,0,11-12-2,DIC-MID-2,Chris,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+10,4,12,13,2,L,0,0,0,0,2,12-13-2,DIC-PLA-2,Chris,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+10,4,12,13,3,L,0,0,0,0,2,12-13-3,DIC-PLA-3,Chris,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+10,4,12,11,3,D,1,0,0,1,0,11-12-3,DIC-MID-3,Chris,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+10,4,12,13,4,W,3,0,0,0,1,12-13-4,DIC-PLA-4,Chris,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+10,4,12,10,2,L,0,0,0,0,2,10-12-2,BFR-DIC-2,Chris,Dictadores FC,DIC,Bipe and Friends,BFR,False,False,False,False,False
+10,4,12,13,5,L,0,0,0,0,1,12-13-5,DIC-PLA-5,Chris,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+39,4,12,13,1,L,0,0,0,0,1,12-13-1,DIC-PLA-1,Danny,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+39,4,12,11,1,L,0,0,0,0,2,11-12-1,DIC-MID-1,Danny,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+39,4,12,10,1,D,1,0,0,0,1,10-12-1,BFR-DIC-1,Danny,Dictadores FC,DIC,Bipe and Friends,BFR,False,False,False,False,False
+39,4,12,11,2,W,3,0,0,1,0,11-12-2,DIC-MID-2,Danny,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+39,4,12,13,2,L,0,0,0,0,2,12-13-2,DIC-PLA-2,Danny,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+39,4,12,13,3,L,0,0,0,0,2,12-13-3,DIC-PLA-3,Danny,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+39,4,12,11,3,D,1,0,0,1,0,11-12-3,DIC-MID-3,Danny,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+39,4,12,13,4,W,3,0,0,0,1,12-13-4,DIC-PLA-4,Danny,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+39,4,12,10,2,L,0,0,0,0,2,10-12-2,BFR-DIC-2,Danny,Dictadores FC,DIC,Bipe and Friends,BFR,False,False,False,False,False
+39,4,12,13,5,L,0,0,0,0,1,12-13-5,DIC-PLA-5,Danny,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+36,4,12,13,1,L,0,0,0,0,1,12-13-1,DIC-PLA-1,Ian,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+36,4,12,11,1,L,0,0,0,0,2,11-12-1,DIC-MID-1,Ian,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+36,4,12,10,1,D,1,0,0,0,1,10-12-1,BFR-DIC-1,Ian,Dictadores FC,DIC,Bipe and Friends,BFR,False,False,False,False,False
+36,4,12,11,2,W,3,0,0,1,0,11-12-2,DIC-MID-2,Ian,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+36,4,12,13,2,L,0,0,0,0,2,12-13-2,DIC-PLA-2,Ian,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+36,4,12,13,3,L,0,0,0,0,2,12-13-3,DIC-PLA-3,Ian,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+36,4,12,11,3,D,1,0,0,1,0,11-12-3,DIC-MID-3,Ian,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+36,4,12,13,4,W,3,0,0,0,1,12-13-4,DIC-PLA-4,Ian,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+36,4,12,10,2,L,0,0,0,0,2,10-12-2,BFR-DIC-2,Ian,Dictadores FC,DIC,Bipe and Friends,BFR,False,False,False,False,False
+36,4,12,13,5,L,0,0,0,0,1,12-13-5,DIC-PLA-5,Ian,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+35,4,12,13,1,L,0,0,0,0,1,12-13-1,DIC-PLA-1,Jesus,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+35,4,12,11,1,L,0,1,0,0,2,11-12-1,DIC-MID-1,Jesus,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+35,4,12,10,1,D,1,0,1,0,1,10-12-1,BFR-DIC-1,Jesus,Dictadores FC,DIC,Bipe and Friends,BFR,False,False,False,False,False
+35,4,12,11,2,W,3,1,0,1,0,11-12-2,DIC-MID-2,Jesus,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+35,4,12,13,2,L,0,0,0,0,2,12-13-2,DIC-PLA-2,Jesus,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+35,4,12,13,3,L,0,0,0,0,2,12-13-3,DIC-PLA-3,Jesus,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+35,4,12,11,3,D,1,0,0,1,0,11-12-3,DIC-MID-3,Jesus,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+35,4,12,13,4,W,3,1,1,0,1,12-13-4,DIC-PLA-4,Jesus,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+35,4,12,10,2,L,0,0,0,0,2,10-12-2,BFR-DIC-2,Jesus,Dictadores FC,DIC,Bipe and Friends,BFR,False,False,False,False,False
+35,4,12,13,5,L,0,0,0,0,1,12-13-5,DIC-PLA-5,Jesus,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+34,4,12,13,1,L,0,0,0,0,1,12-13-1,DIC-PLA-1,Josue,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+34,4,12,11,1,L,0,0,0,0,2,11-12-1,DIC-MID-1,Josue,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+34,4,12,10,1,D,1,0,0,0,1,10-12-1,BFR-DIC-1,Josue,Dictadores FC,DIC,Bipe and Friends,BFR,False,False,False,False,False
+34,4,12,11,2,W,3,0,1,1,0,11-12-2,DIC-MID-2,Josue,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+34,4,12,13,2,L,0,0,0,0,2,12-13-2,DIC-PLA-2,Josue,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+34,4,12,13,3,L,0,0,0,0,2,12-13-3,DIC-PLA-3,Josue,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+34,4,12,11,3,D,1,0,0,1,0,11-12-3,DIC-MID-3,Josue,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+34,4,12,13,4,W,3,0,0,0,1,12-13-4,DIC-PLA-4,Josue,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+34,4,12,10,2,L,0,0,0,0,2,10-12-2,BFR-DIC-2,Josue,Dictadores FC,DIC,Bipe and Friends,BFR,False,False,False,False,False
+34,4,12,13,5,L,0,0,0,0,1,12-13-5,DIC-PLA-5,Josue,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+38,4,12,13,1,L,0,0,0,0,1,12-13-1,DIC-PLA-1,Ronald,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+38,4,12,11,1,L,0,0,0,0,2,11-12-1,DIC-MID-1,Ronald,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+38,4,12,10,1,D,1,1,0,0,1,10-12-1,BFR-DIC-1,Ronald,Dictadores FC,DIC,Bipe and Friends,BFR,False,False,False,False,False
+38,4,12,11,2,W,3,0,0,1,0,11-12-2,DIC-MID-2,Ronald,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+38,4,12,13,2,L,0,0,0,0,2,12-13-2,DIC-PLA-2,Ronald,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+38,4,12,13,3,L,0,0,0,0,2,12-13-3,DIC-PLA-3,Ronald,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+38,4,12,11,3,D,1,0,0,1,0,11-12-3,DIC-MID-3,Ronald,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+38,4,12,13,4,W,3,1,0,0,1,12-13-4,DIC-PLA-4,Ronald,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+38,4,12,10,2,L,0,0,0,0,2,10-12-2,BFR-DIC-2,Ronald,Dictadores FC,DIC,Bipe and Friends,BFR,False,False,False,False,False
+38,4,12,13,5,L,0,0,0,0,1,12-13-5,DIC-PLA-5,Ronald,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+37,4,12,13,1,L,0,0,0,0,1,12-13-1,DIC-PLA-1,Tony,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+37,4,12,11,1,L,0,0,0,0,2,11-12-1,DIC-MID-1,Tony,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+37,4,12,10,1,D,1,0,0,0,1,10-12-1,BFR-DIC-1,Tony,Dictadores FC,DIC,Bipe and Friends,BFR,False,False,False,False,False
+37,4,12,11,2,W,3,0,0,1,0,11-12-2,DIC-MID-2,Tony,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+37,4,12,13,2,L,0,0,0,0,2,12-13-2,DIC-PLA-2,Tony,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+37,4,12,13,3,L,0,0,0,0,2,12-13-3,DIC-PLA-3,Tony,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+37,4,12,11,3,D,1,0,0,1,0,11-12-3,DIC-MID-3,Tony,Dictadores FC,DIC,Mid Diff FC,MID,False,False,False,False,False
+37,4,12,13,4,W,3,0,0,0,1,12-13-4,DIC-PLA-4,Tony,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+37,4,12,10,2,L,0,0,0,0,2,10-12-2,BFR-DIC-2,Tony,Dictadores FC,DIC,Bipe and Friends,BFR,False,False,False,False,False
+37,4,12,13,5,L,0,0,0,0,1,12-13-5,DIC-PLA-5,Tony,Dictadores FC,DIC,La  Plancha FC,PLA,False,False,False,False,False
+43,4,13,11,1,W,3,1,0,1,0,11-13-1,MID-PLA-1,Adrian,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,False,True,False
+43,4,13,12,1,W,3,0,0,1,0,12-13-1,DIC-PLA-1,Adrian,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,True,False
+43,4,13,10,1,W,3,0,0,1,0,10-13-1,BFR-PLA-1,Adrian,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,True,False
+43,4,13,10,2,L,0,1,0,0,2,10-13-2,BFR-PLA-2,Adrian,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,True,False
+43,4,13,12,2,W,3,0,0,1,0,12-13-2,DIC-PLA-2,Adrian,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,True,False
+43,4,13,10,3,D,1,0,0,1,0,10-13-3,BFR-PLA-3,Adrian,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,True,False
+43,4,13,11,2,W,3,0,1,1,0,11-13-2,MID-PLA-2,Adrian,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,False,True,False
+43,4,13,12,3,W,3,0,1,1,0,12-13-3,DIC-PLA-3,Adrian,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,True,False
+43,4,13,12,4,L,0,1,0,0,2,12-13-4,DIC-PLA-4,Adrian,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,True,False
+43,4,13,10,4,D,1,0,0,0,1,10-13-4,BFR-PLA-4,Adrian,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,True,False
+43,4,13,12,5,W,3,0,0,1,0,12-13-5,DIC-PLA-5,Adrian,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,True,False
+43,4,13,11,3,W,3,1,1,0,1,11-13-3,MID-PLA-3,Adrian,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,False,True,False
+21,4,13,11,1,W,3,0,0,1,0,11-13-1,MID-PLA-1,Eric,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,False,False,False
+21,4,13,12,1,W,3,0,0,1,0,12-13-1,DIC-PLA-1,Eric,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+21,4,13,10,1,W,3,1,0,1,0,10-13-1,BFR-PLA-1,Eric,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,False
+21,4,13,10,2,L,0,0,0,0,2,10-13-2,BFR-PLA-2,Eric,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,False
+21,4,13,12,2,W,3,0,1,1,0,12-13-2,DIC-PLA-2,Eric,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+21,4,13,10,3,D,1,0,0,1,0,10-13-3,BFR-PLA-3,Eric,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,False
+21,4,13,11,2,W,3,0,0,1,0,11-13-2,MID-PLA-2,Eric,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,False,False,False
+21,4,13,12,3,W,3,0,0,1,0,12-13-3,DIC-PLA-3,Eric,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+21,4,13,12,4,L,0,0,0,0,2,12-13-4,DIC-PLA-4,Eric,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+21,4,13,10,4,D,1,0,0,0,1,10-13-4,BFR-PLA-4,Eric,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,False
+21,4,13,12,5,W,3,0,0,1,0,12-13-5,DIC-PLA-5,Eric,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+21,4,13,11,3,W,3,1,0,0,1,11-13-3,MID-PLA-3,Eric,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,False,False,False
+40,4,13,11,1,W,3,0,0,1,0,11-13-1,MID-PLA-1,Henrique,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,False,False,True
+40,4,13,12,1,W,3,1,0,1,0,12-13-1,DIC-PLA-1,Henrique,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,True
+40,4,13,10,1,W,3,0,1,1,0,10-13-1,BFR-PLA-1,Henrique,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,True
+40,4,13,10,2,L,0,0,0,0,2,10-13-2,BFR-PLA-2,Henrique,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,True
+40,4,13,12,2,W,3,0,0,1,0,12-13-2,DIC-PLA-2,Henrique,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,True
+40,4,13,10,3,D,1,0,0,1,0,10-13-3,BFR-PLA-3,Henrique,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,True
+40,4,13,11,2,W,3,1,0,1,0,11-13-2,MID-PLA-2,Henrique,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,False,False,True
+40,4,13,12,3,W,3,1,1,1,0,12-13-3,DIC-PLA-3,Henrique,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,True
+40,4,13,12,4,L,0,0,1,0,2,12-13-4,DIC-PLA-4,Henrique,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,True
+40,4,13,10,4,D,1,0,0,0,1,10-13-4,BFR-PLA-4,Henrique,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,True
+40,4,13,12,5,W,3,0,0,1,0,12-13-5,DIC-PLA-5,Henrique,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,True
+40,4,13,11,3,W,3,0,1,0,1,11-13-3,MID-PLA-3,Henrique,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,False,False,True
+25,4,13,11,1,W,3,1,0,1,0,11-13-1,MID-PLA-1,Jrod,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,True,True,False
+25,4,13,12,1,W,3,0,0,1,0,12-13-1,DIC-PLA-1,Jrod,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,True,True,False
+25,4,13,10,1,W,3,1,0,1,0,10-13-1,BFR-PLA-1,Jrod,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,True,True,False
+25,4,13,10,2,L,0,0,0,0,2,10-13-2,BFR-PLA-2,Jrod,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,True,True,False
+25,4,13,12,2,W,3,0,0,1,0,12-13-2,DIC-PLA-2,Jrod,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,True,True,False
+25,4,13,10,3,D,1,0,0,1,0,10-13-3,BFR-PLA-3,Jrod,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,True,True,False
+25,4,13,11,2,W,3,1,0,1,0,11-13-2,MID-PLA-2,Jrod,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,True,True,False
+25,4,13,12,3,W,3,0,0,1,0,12-13-3,DIC-PLA-3,Jrod,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,True,True,False
+25,4,13,12,4,L,0,0,0,0,2,12-13-4,DIC-PLA-4,Jrod,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,True,True,False
+25,4,13,10,4,D,1,0,0,0,1,10-13-4,BFR-PLA-4,Jrod,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,True,True,False
+25,4,13,12,5,W,3,1,0,1,0,12-13-5,DIC-PLA-5,Jrod,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,True,True,False
+25,4,13,11,3,W,3,0,0,0,1,11-13-3,MID-PLA-3,Jrod,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,True,True,False
+29,4,13,11,1,W,3,0,0,1,0,11-13-1,MID-PLA-1,Sebas Pereira,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,False,False,False
+29,4,13,12,1,W,3,0,0,1,0,12-13-1,DIC-PLA-1,Sebas Pereira,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+29,4,13,10,1,W,3,0,0,1,0,10-13-1,BFR-PLA-1,Sebas Pereira,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,False
+29,4,13,10,2,L,0,0,1,0,2,10-13-2,BFR-PLA-2,Sebas Pereira,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,False
+29,4,13,12,2,W,3,0,0,1,0,12-13-2,DIC-PLA-2,Sebas Pereira,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+29,4,13,10,3,D,1,0,0,1,0,10-13-3,BFR-PLA-3,Sebas Pereira,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,False
+29,4,13,11,2,W,3,0,0,1,0,11-13-2,MID-PLA-2,Sebas Pereira,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,False,False,False
+29,4,13,12,3,W,3,0,0,1,0,12-13-3,DIC-PLA-3,Sebas Pereira,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+29,4,13,12,4,L,0,0,0,0,2,12-13-4,DIC-PLA-4,Sebas Pereira,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+29,4,13,10,4,D,1,0,0,0,1,10-13-4,BFR-PLA-4,Sebas Pereira,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,False
+29,4,13,12,5,W,3,0,0,1,0,12-13-5,DIC-PLA-5,Sebas Pereira,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+29,4,13,11,3,W,3,0,0,0,1,11-13-3,MID-PLA-3,Sebas Pereira,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,False,False,False
+41,4,13,11,1,W,3,0,1,1,0,11-13-1,MID-PLA-1,Segundo,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,False,False,False
+41,4,13,12,1,W,3,0,0,1,0,12-13-1,DIC-PLA-1,Segundo,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+41,4,13,10,1,W,3,0,0,1,0,10-13-1,BFR-PLA-1,Segundo,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,False
+41,4,13,10,2,L,0,0,0,0,2,10-13-2,BFR-PLA-2,Segundo,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,False
+41,4,13,12,2,W,3,0,0,1,0,12-13-2,DIC-PLA-2,Segundo,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+41,4,13,10,3,D,1,0,0,1,0,10-13-3,BFR-PLA-3,Segundo,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,False
+41,4,13,11,2,W,3,0,0,1,0,11-13-2,MID-PLA-2,Segundo,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,False,False,False
+41,4,13,12,3,W,3,1,0,1,0,12-13-3,DIC-PLA-3,Segundo,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+41,4,13,12,4,L,0,0,0,0,2,12-13-4,DIC-PLA-4,Segundo,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+41,4,13,10,4,D,1,0,0,0,1,10-13-4,BFR-PLA-4,Segundo,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,False
+41,4,13,12,5,W,3,0,1,1,0,12-13-5,DIC-PLA-5,Segundo,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+41,4,13,11,3,W,3,0,0,0,1,11-13-3,MID-PLA-3,Segundo,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,False,False,False
+42,4,13,11,1,W,3,0,0,1,0,11-13-1,MID-PLA-1,Victor,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,False,False,False
+42,4,13,12,1,W,3,0,0,1,0,12-13-1,DIC-PLA-1,Victor,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+42,4,13,10,1,W,3,0,0,1,0,10-13-1,BFR-PLA-1,Victor,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,False
+42,4,13,10,2,L,0,0,0,0,2,10-13-2,BFR-PLA-2,Victor,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,False
+42,4,13,12,2,W,3,2,0,1,0,12-13-2,DIC-PLA-2,Victor,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+42,4,13,10,3,D,1,0,0,1,0,10-13-3,BFR-PLA-3,Victor,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,False
+42,4,13,11,2,W,3,0,0,1,0,11-13-2,MID-PLA-2,Victor,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,False,False,False
+42,4,13,12,3,W,3,0,0,1,0,12-13-3,DIC-PLA-3,Victor,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+42,4,13,12,4,L,0,0,0,0,2,12-13-4,DIC-PLA-4,Victor,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+42,4,13,10,4,D,1,1,0,0,1,10-13-4,BFR-PLA-4,Victor,La  Plancha FC,PLA,Bipe and Friends,BFR,False,False,False,False,False
+42,4,13,12,5,W,3,0,0,1,0,12-13-5,DIC-PLA-5,Victor,La  Plancha FC,PLA,Dictadores FC,DIC,False,False,False,False,False
+42,4,13,11,3,W,3,0,0,0,1,11-13-3,MID-PLA-3,Victor,La  Plancha FC,PLA,Mid Diff FC,MID,False,False,False,False,False
